@@ -1,3 +1,14 @@
+'''
+def parse_phenix_xml(xml_path):
+    This is an internal function to parse XML files from the output of a database from perkinelmer
+    This function can be improved to split by position or time (which isn't included right now)
+
+    By: Ajay Bhargava
+    Last Edit: 03/03/19
+    
+'''
+
+
 def parse_phenix_xml(xml_path):
     import os, re
     from collections import defaultdict
