@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 '''
 
 def flatfield_correction_algorithm(input_glob, known_img, output_path)
@@ -5,6 +7,8 @@ def flatfield_correction_algorithm(input_glob, known_img, output_path)
     input_glob: is a glob './*.tiff' of files to be processed
     known_img: path of known image where acquisition was performed but no sample. known_img posesses the the same artifacts as the experimental images
     output_path: where to store the files when the job is done
+
+    Caution: Large images will cause this algorithm to be slow
 
 Creator: Ajay Bhargava
 Date: 18/02/19

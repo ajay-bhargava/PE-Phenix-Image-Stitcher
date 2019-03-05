@@ -1,3 +1,15 @@
+'''
+
+def channel_stitch(path to files, wells, channel, images):
+    This is an internal function used with main function
+    To accomodate resolution of images at different magnification, please adjust the mosaic.paste to accomodate for this
+
+    By: Ajay Bhargava
+    03/03/19
+
+'''
+
+
 def channel_stitch(path_to_files, wells, channel, images):
     from PIL import Image
     import numpy

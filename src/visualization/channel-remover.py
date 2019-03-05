@@ -1,9 +1,14 @@
+#!/usr/bin/python
 
 '''
 
+def channel_remover(input_path):
+
+    A function to remove unneeded channels from existing stitched files produced.
+    Takes input arguments as a path of folders.
+
 By Ajay Bhargava
-def channel_remover()
-A function to remove unneeded channels from existing stitched files produced.
+Last Edit: 03/03/19
 
 '''
 

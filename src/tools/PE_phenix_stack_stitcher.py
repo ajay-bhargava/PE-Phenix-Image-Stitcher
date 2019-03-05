@@ -1,5 +1,18 @@
 #!/usr/bin/python
 
+'''
+
+def stitch_images(input_path, output_path)
+
+    input_path: path to raw data collected from Phenix Database Output. This path should include
+    output_path: path to where you want stitched images to go, this should be a previously defined directory
+
+Creator: Ajay Bhargava
+Date: 03/03/19
+
+'''
+
+
 import sys
 
 def stitch_images(path_to_files, output_path, *args):
@@ -9,7 +22,7 @@ def stitch_images(path_to_files, output_path, *args):
     from skimage.external import tifffile
 
     path_to_xml_file = path_to_files + 'Index.idx.xml'
-    dictionary = parse_xml(path_to_xml_file) 
+    dictionary = parse_xml(path_to_xml_file)
 
     for wells in tqdm(dictionary):
         d = {channels:images for channels,images in dictionary[wells].items()}
